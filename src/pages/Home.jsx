@@ -1,12 +1,13 @@
+import Search from "../components/Search";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Travel Agency</h1>
-      <p>Welcome to our website!</p>
+    <div className="p-4">
+      <Search />
+    
     </div>
   );
 };
 
 export default Home;
-
 
