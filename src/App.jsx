@@ -1,29 +1,26 @@
-import React from 'react'
-import { Route, Routes } from 'react-router'
-import  Home from "./pages/Home"
-import  Contact from "./pages/Contact"
-import  About from "./pages/About"
-import  Destinations from "./pages/Destinations"
-import MainLayout from "./Layouts/MainLayout"
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Destinations from "./pages/Destinations";
+import DestinationsDetails from "./pages/DestinationsDetails";
+import MainLayout from "./components/MainLayout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-    <MainLayout>
-     
+    <BrowserRouter>
       <Routes>
-     <Route path='/' element={<Home />} />
-     <Route path='/About' element={<About />} />
-     <Route path='/Contact' element={<Contact />} />
-     <Route path='/Destinations' element={<Destinations />} />
-     <Route path='/' element={<Home />} />
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="destinations" element={<Destinations />} />
+          {}
+          <Route path="destinations/:slug" element={<DestinationsDetails />} />
+        </Route>
       </Routes>
-  
-   
-    </MainLayout>
+    </BrowserRouter>
   );
-  
 };
 
-export default App
-
+export default App;
