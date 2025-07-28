@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-base-200 py-10 px-4">
       <div className="max-w-6xl mx-auto hero-content flex-col lg:flex-row gap-12">
-        {/* النص على اليسار */}
+      
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-lg">
@@ -12,7 +12,7 @@ const Contact = () => {
           </p>
         </div>
 
-        {/* الفورم على اليمين */}
+        
         <div className="card bg-base-100 w-full max-w-md shadow-2xl lg:w-1/2">
           <div className="card-body space-y-4">
             <div>
