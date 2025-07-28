@@ -2,7 +2,6 @@
 import DestinationCard from "../components/DestinationCard";
 import { Link } from "react-router-dom";
 
-
 const destinations = [
   {
     slug: "london",
@@ -45,7 +44,7 @@ const destinations = [
 const Destinations = () => {
   return (
     <div className="p-4">
-      <h1 className="text-3xl font-bold mb-4">Our Destinations</h1>
+      <h1 className="text-5xl text-center mt-15 mb-20 font-bold mb-4">Our Destinations</h1>
       <div className="grid grid-cols-3 md:grid-cols gap-2">
         {destinations.map((dest, index) => (
           <Link to={`/destinations/${dest.slug}`} key={index}>

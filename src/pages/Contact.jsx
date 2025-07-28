@@ -8,9 +8,7 @@ const Contact = () => {
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
           <p className="text-lg">
-            We'd love to hear from you! Whether you have questions, feedback, or
-            you're ready to start your journey — just send us a message and we’ll
-            get back to you as soon as possible.
+         Have questions, ideas, or want to join a trip? Send us a message and we’ll get back to you soon!
           </p>
         </div>
 
