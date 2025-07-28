@@ -9,7 +9,7 @@ const Search = () => {
   const [date, setDate] = useState("");
 
   const handleSearch = () => {
-    // You can pass search params in URL if needed
+  
     navigate("/destinations");
   };
 

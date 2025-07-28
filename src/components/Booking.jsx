@@ -9,7 +9,7 @@ const Booking = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Card 1 */}
+      
           <div className="bg-white shadow-md rounded-lg p-6">
             <h3 className="text-xl font-semibold mb-2">
               Curated Student Trips
@@ -20,7 +20,6 @@ const Booking = () => {
             </p>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-white shadow-md rounded-lg p-6">
             <h3 className="text-xl font-semibold mb-2">Affordable Packages</h3>
             <p className="text-gray-600 text-xl" >
@@ -29,7 +28,6 @@ const Booking = () => {
             </p>
           </div>
 
-          {/* Card 3 */}
           <div className="bg-white shadow-md rounded-lg p-6">
             <h3 className="text-xl font-semibold mb-2">Flexible Dates</h3>
             <p className="text-gray-600 text-xl">
