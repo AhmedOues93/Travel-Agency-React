@@ -2,40 +2,48 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>
-      <div className="hero bg-base-200 min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold">----</h1>
-            <p className="py-6">......</p>
-          </div>
-          <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-            <div className="card-body">
-              <fieldset className="fieldset">
-                <label className="label">Name</label>
-                <input
-                  type="email"
-                  className="input"
-                  placeholder="Ahmed Oueslati"
-                />
-                <label className="label">Email</label>
-                <input
-                  type="email"
-                  className="input"
-                  placeholder="oueslatiahmed38@gmail.com"
-                />
+    <div className="min-h-screen bg-base-200 py-10 px-4">
+      <div className="max-w-6xl mx-auto hero-content flex-col lg:flex-row gap-12">
+        {/* النص على اليسار */}
+        <div className="text-center lg:text-left lg:w-1/2">
+          <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
+          <p className="text-lg">
+            We'd love to hear from you! Whether you have questions, feedback, or
+            you're ready to start your journey — just send us a message and we’ll
+            get back to you as soon as possible.
+          </p>
+        </div>
 
-                <fieldset className="fieldset">
-                  <legend className="fieldset-legend">Your Message</legend>
-                  <textarea
-                    className="textarea h-24"
-                    placeholder="Bio"
-                  ></textarea>
-                 
-                </fieldset>
-                <button className="btn btn-neutral mt-4">Send</button>
-              </fieldset>
+        {/* الفورم على اليمين */}
+        <div className="card bg-base-100 w-full max-w-md shadow-2xl lg:w-1/2">
+          <div className="card-body space-y-4">
+            <div>
+              <label className="label font-semibold">Name</label>
+              <input
+                type="text"
+                className="input input-bordered w-full"
+                placeholder="Ahmed Oueslati"
+              />
             </div>
+
+            <div>
+              <label className="label font-semibold">Email</label>
+              <input
+                type="email"
+                className="input input-bordered w-full"
+                placeholder="oueslatiahmed38@gmail.com"
+              />
+            </div>
+
+            <div>
+              <label className="label font-semibold">Your Message</label>
+              <textarea
+                className="textarea textarea-bordered w-full h-24"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+
+            <button className="btn btn-neutral w-full mt-4">Send Message</button>
           </div>
         </div>
       </div>
