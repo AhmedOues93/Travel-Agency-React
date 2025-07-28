@@ -9,13 +9,19 @@ import { Link } from "react-router-dom";
   <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
   <nav>
     <h6 className="footer-title">Services</h6>
-    <a className="link link-hover">Destinations</a>
+       <Link className="link link-hover" to="/destinations">
+          Destinations
+        </Link>
   </nav>
 
   <nav>
     <h6 className="footer-title">Company</h6>
-    <a className="link link-hover">About </a>
-    <a className="link link-hover">Contact</a>
+     <Link className="link link-hover" to="/about">
+          About
+        </Link>
+     <Link className="link link-hover" to="/contact">
+          Contact
+        </Link>
   </nav>
 
   <nav>
